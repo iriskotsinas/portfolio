@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import Icon from '@mdi/react';
+import { mdiChevronDoubleDown } from '@mdi/js';
+import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import Image from '../Image/Image';
 
@@ -66,6 +69,13 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
+        <Container>
+          <div className="chevron-down-about">
+            <Link to="projects" smooth duration={1000}>
+              <Icon path={mdiChevronDoubleDown} size={1} />
+            </Link>
+          </div>
+        </Container>
       </Container>
     </section>
   );

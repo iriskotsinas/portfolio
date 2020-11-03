@@ -37,6 +37,12 @@ const Projects = () => {
               iriskotsinas
             </a>
           </div>
+          <Title title="Contact" />
+          <p className="contact-text">
+            If you are interested in working with me or have any questions, feel free to contact me.
+            You can find links to my Github and Linkedin as well as my email adress at the bottom of
+            this page.
+          </p>
         </div>
       </Container>
     </section>
