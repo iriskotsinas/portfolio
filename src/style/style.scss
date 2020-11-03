@@ -1,0 +1,240 @@
+// Margins
+.mb-8 {
+  margin-bottom: 8rem !important;
+}
+
+// Scroll Reveal UX
+.load-hidden {
+  visibility: hidden;
+}
+
+// COLORS
+$primary-color: #486688;
+$secondary-color: #1f355e;
+
+// $primary-color: #7f449d;
+// $secondary-color: #793fc1;
+
+$white-color: #fff;
+
+$grey-color: #ebebeb;
+
+$dark-grey: #333333;
+
+$dark-blue-text: #272341; // For Headings
+
+// FONT SIZE
+$default-font-size: 1.6rem;
+$big-font-size: 4rem;
+$mid-font-size: 2.5rem;
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $default-font-size;
+  color: $dark-blue-text;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.8rem $default-font-size;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+}
+
+.section-title {
+  margin: 0px;
+  margin-bottom: 3rem;
+  font-size: $big-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  // background: url("../images/project.jpg");
+  // background-position: center;
+  // background-size: cover;
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    padding-top: 10rem;
+  }
+
+  .hero-cta {
+    // display: inline-block;
+    margin-top: 10vw;
+    
+    & span {
+      font-size: 3rem;
+      display: inline-flex; 
+    }
+
+    & a {
+      font-size: 3rem;
+      padding: 2vw;
+      margin: 2vw;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      border-width: 2px;
+      border-style: solid;
+
+      &:hover {
+        cursor: pointer;
+        background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+        border-image-slice: 1;
+      }
+    }
+  }
+}
+
+.cta-btn--hero {
+  margin: auto;
+}
+
+#about {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+
+  color: $white-color;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  font-weight: 400;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  .about-wrapper {
+    &__image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-right: 10vw;
+    }
+
+    &__info {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      &-text {
+        text-align: left;
+
+        &--important {
+          background: darken($secondary-color, 1%);
+          display: inline-block;
+          font-style: italic;
+          padding: 0 0.3rem;
+          margin: 0.3rem 0;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+.cta-btn--resume {
+  border-style: solid;
+  color: $white-color;
+}
+
+#projects {
+  background-color: $white-color;
+  color: $dark-blue-text;
+
+  .project-wrapper {
+    padding-bottom: 9rem;
+    padding-top: 5rem;
+
+    .row {
+      margin-bottom: 8rem;
+    }
+  }
+}   
+
+.links {
+  color: black;
+}
+
+.chevron-down-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+
+  & svg {
+    position: relative;
+    animation: jump 5s infinite;
+    animation-timing-function: ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+      border-image-slice: 1;
+    }
+  }
+}
+
