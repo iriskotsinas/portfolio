@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import Icon from '@mdi/react';
-import { mdiChevronDoubleDown } from '@mdi/js';
+import { mdiChevronDown } from '@mdi/js';
 
 const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -27,7 +27,7 @@ const Header = () => {
             {/* {title || 'Welcome'}{' '} */}
             <span className="text-color-main">Iris Kotsinas</span>
             <br />
-            Personal portfolio
+            <span className="text-color-second">Personal portfolio</span>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -49,7 +49,7 @@ const Header = () => {
       <Container>
         <div className="chevron-down-container">
           <Link to="about" smooth duration={1000}>
-            <Icon path={mdiChevronDoubleDown} size={1} />
+            <Icon path={mdiChevronDown} size={1} />
           </Link>
         </div>
       </Container>

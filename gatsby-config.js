@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/iriskotsinas.github.io`,
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
