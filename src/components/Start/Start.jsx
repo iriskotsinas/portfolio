@@ -39,7 +39,7 @@ const Header = () => {
               <Link to="projects" smooth duration={1000}>
                 My work
               </Link>
-              <Link to="about" smooth duration={1000}>
+              <Link to="contact" smooth duration={1000}>
                 Contact
               </Link>
             </span>
