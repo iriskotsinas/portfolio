@@ -78,14 +78,14 @@ const About = () => {
             </Col>
           </Row>
         </Container>
+      <Container className="chevron-btn">
+          <div className="chevron-down-about">
+            <Link to="projects" smooth duration={1000}>
+              <Icon path={mdiChevronDown} size={1} />
+            </Link>
+          </div>
+          </Container>
       </section>
-      <Container>
-        <div className="chevron-down-about">
-          <Link to="projects" smooth duration={1000}>
-            <Icon path={mdiChevronDown} size={1} />
-          </Link>
-        </div>
-      </Container>
     </section>
   );
 };
