@@ -6,11 +6,14 @@ import Image from '../Image/Image';
 import Pdf from '../../files/TNM094_slutrapport.pdf';
 import Pdf2 from '../../files/TNCG15__Global_Illumination_and_Rendering.pdf';
 import Pdf3 from '../../files/Game-of-kaken.pdf';
+import Pdf4 from '../../files/TNM085_Boids_simulation.pdf';
 
 const Projects = () => {
   // TODO pass down as props
   const repo = 'https://github.com/iriskotsinas/DomeDagen';
   const repoDiatot = 'https://github.com/iriskotsinas/TNM040-diatot';
+  const repoBoids = 'https://github.com/iriskotsinas/TNM085-Boids-simulation';
+  const websiteBoids = 'http://www.student.itn.liu.se/~jacmo699/MT3/tnm085/boids/';
   const video3D =
     'https://www.dropbox.com/sh/6gfwx74o3qprbly/AAB5QoLdePnxe37lyDXvcsjra?dl=0&fbclid=IwAR16YNJxDxQcFDKD1AszTn2uh7Kcp6phYfkDirQQ-6hJhkjsgshfND2Dzko&preview=Game_of_Kaken_FINAL_2.0_30.5.2019+copy.mp4';
 
@@ -34,10 +37,8 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="My work" />
-          <p className="project-wrapper__info-text">
-            This website is still under development, but you can find some of my work below or on my
-            GitHub-account linked at the bottom of the page.
-          </p>
+          {/* <p className="project-wrapper__info-text">
+          </p> */}
           <Row className="project-row">
             <Container className="project-total">
               <Col className="column-project" lg={7} sm={12}>
@@ -66,7 +67,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="button-proj"
+                      className="cta-btn text-color-main"
                       href={Pdf2}
                     >
                       Report
@@ -177,7 +178,12 @@ const Projects = () => {
                       </p>
                       {/* <p className="mb-4"></p> */}
                     </div>
-                    <a target="_blank" rel="noopener noreferrer" className="button-proj" href={Pdf}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn text-color-main"
+                      href={Pdf}
+                    >
                       Report
                     </a>
 
@@ -224,6 +230,80 @@ const Projects = () => {
                   distance="30px"
                 >
                   <div className="project-wrapper__text">
+                    <h3 className="project-wrapper__text-title">
+                      Boids - Simulation of animal flocking behaviour
+                    </h3>
+                    <div>
+                      <p>
+                        The project, created spring 2020 in the course TNM085 Modeling Project, is a
+                        simulation of animal flocking behaviour, also known as Boids.
+                      </p>
+                      <p className="mb-4">
+                        The simulation was first implemented in MATLAB, and thereafter in JavaScript
+                        with three.js.
+                      </p>
+                    </div>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn text-color-main"
+                      href={Pdf4}
+                    >
+                      Report
+                    </a>
+
+                    {repoBoids && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn text-color-main"
+                        href={repoBoids}
+                      >
+                        Source code
+                      </a>
+                    )}
+
+                    {websiteBoids && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn text-color-main"
+                        href={websiteBoids}
+                      >
+                        Simulation
+                      </a>
+                    )}
+                  </div>
+                </Fade>
+              </Col>
+              <Col className="column-project" lg={5} sm={12}>
+                {' '}
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
+                >
+                  <div className="project-wrapper__image">
+                    <div data-tilt className="thumbnail rounded">
+                      <Image alt="project" filename="boids-simulation.png" />
+                      <Image alt="project" filename="boids-sim.png" />
+                    </div>
+                  </div>
+                </Fade>
+              </Col>
+            </Container>
+            <Container className="project-total">
+              <Col className="column-project" lg={7} sm={12}>
+                <Fade
+                  left={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={500}
+                  distance="30px"
+                >
+                  <div className="project-wrapper__text">
                     <h3 className="project-wrapper__text-title">Game of Kåken</h3>
                     <div>
                       <p>
@@ -238,7 +318,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="button-proj"
+                      className="cta-btn text-color-main"
                       href={Pdf3}
                     >
                       Report
@@ -297,7 +377,12 @@ const Projects = () => {
                       </p>
                       <p className="mb-4"> Implemented in JavaScript and React.</p>
                     </div>
-                    <a target="_blank" rel="noopener noreferrer" className="button-proj" href={Pdf}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn text-color-main"
+                      href={Pdf}
+                    >
                       Report
                     </a>
 

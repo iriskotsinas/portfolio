@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
 import Icon from '@mdi/react';
 import { mdiChevronDown } from '@mdi/js';
 import { Link } from 'react-scroll';
@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section>
       <section id="about">
-        <Container>
+        <Container className="about-container">
           <Title title="About Me" />
           <Row className="about-wrapper">
             <Col md={6} sm={12}>
@@ -48,15 +48,19 @@ const About = () => {
                     University.
                   </p>
                   <p className="about-wrapper__info-text">
-                    Last summer I worked as a software engineer intern at Axis Communications and
+                    I am an ambitious student who likes to stay busy. I am as of this year Student
+                    Brand Manager for Netlight Consulting and a part of the programming mentorship
+                    {/* LiTHehack. I also enjoy working as a laboratory assistant in various courses. I
+                    have previously been active in extracurricular activities such as The Media
+                    Technoloy Days 2020 as the economy manager, etc. I love sports, especially
+                    lacrosse, and I played in the Swedish women’s national lacrosse team at the
+                    European Championship 2019 in Netanya, Israel. */}
+                  </p>
+                  <p className="about-wrapper__info-text">
+                    Last summer, I worked as a software engineer intern at Axis Communications and
                     got the opportunity to develop a new software for Axis surveillance cameras. It
                     was an exciting learning experience and made me more eager to pursue my interest
                     for software development.
-                  </p>
-                  <p className="about-wrapper__info-text">
-                    I am an ambitious student who likes to stay busy. I am as of this year a Student
-                    Brand Manager for Netlight Consulting and a part of the programming mentorship
-                    LiTHehack. I also enjoy working as a laboratory assistant various courses.
                   </p>
                   <p className="about-wrapper__info-text">
                     My resume is linked below if you are interested in finding out more about me.
@@ -76,6 +80,16 @@ const About = () => {
                 </div>
               </Fade>
             </Col>
+            {/* <Col md={5} sm={12}>
+              <Card style={{ width: '18rem' }}>
+                <Card.Header>Featured</Card.Header>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </Col> */}
           </Row>
         </Container>
         <Container className="chevron-btn">
