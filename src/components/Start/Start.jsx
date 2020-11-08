@@ -49,7 +49,7 @@ const Header = () => {
       <Container>
         <div className="chevron-down-container">
           <Link to="about" smooth duration={1000}>
-            <Icon path={mdiChevronDown} size={1} />
+            <Icon path={mdiChevronDown} size={2} />
           </Link>
         </div>
       </Container>

@@ -95,7 +95,7 @@ const About = () => {
         <Container className="chevron-btn">
           <div className="chevron-down-about">
             <Link to="projects" smooth duration={1000}>
-              <Icon path={mdiChevronDown} size={1} />
+              <Icon path={mdiChevronDown} size={2} />
             </Link>
           </div>
         </Container>

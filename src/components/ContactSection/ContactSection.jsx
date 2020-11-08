@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Icon from '@mdi/react';
 // eslint-disable-next-line no-unused-vars
 import { mdiPhone, mdiAt, mdiLinkedin, mdiGithub } from '@mdi/js';
 import Title from '../Title/Title';
 
 const Contact = () => {
-  // const { contact } = useContext(PortfolioContext);
 
   return (
     <section id="contact-part">

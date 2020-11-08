@@ -32,7 +32,7 @@ const SideBarButton = ({ showBelow }) => {
           className="to-top"
           aria-label="to top"
           path={mdiChevronUpCircle}
-          size={2}
+          size={2.5}
           component="span"
         />
       )}

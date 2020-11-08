@@ -5,11 +5,9 @@ import Icon from '@mdi/react';
 import { mdiPhone, mdiAt, mdiLinkedin, mdiGithub } from '@mdi/js';
 
 const Contact = () => {
-  // const { contact } = useContext(PortfolioContext);
-
   return (
     <section id="contact">
-      <Container>
+      <Container className="contact-wrapper">
         {/* <Title title="Contact" /> */}
         {/* <Fade bottom duration={1000} delay={800} distance="30px"> */}
         <div className="endLinks">

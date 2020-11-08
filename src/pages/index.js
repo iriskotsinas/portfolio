@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/style.scss';
+import '../style/main.scss';
 import SideBarButton from '../components/SideBarButton/SideBarButton';
 
 export default () => {

@@ -1,0 +1,27 @@
+.to-top {
+    z-index: 2;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    color: #b8b8b8;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+  
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s;
+      color: #004c52;
+    }
+}
+  
+@keyframes fadeInOpacity {
+    0% {
+       opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

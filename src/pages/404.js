@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/style.scss';
+import '../style/main.scss';
 
 export default () => {
   return (
