@@ -1,3 +1,3 @@
 # Personal website
 
-My personal website, still under construction, is linked [here](https://iriskotsinas.github.io).
+My personal website, still under construction, is linked [here](https://iriskotsinas.github.io/iriskotsinas).
