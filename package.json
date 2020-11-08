@@ -4,7 +4,7 @@
   "description": "",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "http://iriskotsinas.github.io",
+  "homepage": "http://iriskotsinas.github.io/iriskotsinas",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

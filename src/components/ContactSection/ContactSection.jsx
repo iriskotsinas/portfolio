@@ -5,7 +5,6 @@ import { mdiPhone, mdiAt, mdiLinkedin, mdiGithub } from '@mdi/js';
 import Title from '../Title/Title';
 
 const Contact = () => {
-
   return (
     <section id="contact-part">
       <Container className="contact-section">

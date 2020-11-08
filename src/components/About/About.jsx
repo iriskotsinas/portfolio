@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Icon from '@mdi/react';
 import { mdiChevronDown } from '@mdi/js';
 import { Link } from 'react-scroll';
