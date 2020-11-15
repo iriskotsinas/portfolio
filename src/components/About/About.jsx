@@ -50,11 +50,10 @@ const About = () => {
                   <p className="about-wrapper__info-text">
                     I am an ambitious student who likes to stay busy. I am as of this year Student
                     Brand Manager for Netlight Consulting and a part of the programming mentorship
-                    {/* LiTHehack. I also enjoy working as a laboratory assistant in various courses. I
-                    have previously been active in extracurricular activities such as The Media
-                    Technoloy Days 2020 as the economy manager, etc. I love sports, especially
-                    lacrosse, and I played in the Swedish women’s national lacrosse team at the
-                    European Championship 2019 in Netanya, Israel. */}
+                    LiTHehack. I have previously been active in several extracurricular activities
+                    and I also enjoy working as a laboratory assistant in various courses. I love
+                    sports, especially lacrosse, and I played in the Swedish women’s national
+                    lacrosse team at the European Championship 2019 in Netanya, Israel.
                   </p>
                   <p className="about-wrapper__info-text">
                     Last summer, I worked as a software engineer intern at Axis Communications and
@@ -81,7 +80,7 @@ const About = () => {
               </Fade>
             </Col>
             {/* <Col md={5} sm={12}>
-              <Card style={{ width: '18rem' }}>
+              <Card className="about-wrapper__card" style={{ width: '18rem' }}>
                 <Card.Header>Featured</Card.Header>
                 <ListGroup variant="flush">
                   <ListGroup.Item>Cras justo odio</ListGroup.Item>
