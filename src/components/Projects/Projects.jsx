@@ -337,7 +337,7 @@ const Projects = () => {
                   </div>
                 </Fade>
               </Col>
-              <Col className="column-project" lg={3} sm={12}>
+              <Col className="column-project" lg={5} sm={12}>
                 {' '}
                 <Fade
                   right={isDesktop}
@@ -399,7 +399,7 @@ const Projects = () => {
                   </div>
                 </Fade>
               </Col>
-              <Col className="column-project" lg={3} sm={12}>
+              <Col className="column-project" lg={5} sm={12}>
                 {' '}
                 <Fade
                   right={isDesktop}
