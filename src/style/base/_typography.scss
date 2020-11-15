@@ -39,9 +39,10 @@ a:hover {
 }
 
 .text-color-main {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: $secondary-color;
 
   // Responsive text purple style
   @include respond(phone) {
@@ -56,4 +57,6 @@ a:hover {
 
 .text-color-second {
   color: $purple-color;
+  font-weight: lighter;
+  font-size: $big-font-size;
 }

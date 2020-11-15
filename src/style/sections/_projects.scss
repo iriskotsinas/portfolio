@@ -9,6 +9,10 @@
     padding-top: 2rem;
   }
 
+  .section-title {
+    color: $secondary-color;
+  }
+
   .project-wrapper {
     margin-bottom: 5rem;
 
@@ -57,10 +61,17 @@
         margin-bottom: 4.8rem;
       }
 
+      a {
+        &:hover {
+          color: $grey;
+        }
+      }
+
       &-title {
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+        color: $secondary-color;
 
         @include respond(phone) {
           font-size: 2rem;
@@ -69,6 +80,10 @@
 
       & p > a {
         color: $secondary-color;
+      }
+
+      & p {
+        color: $dark-grey;
       }
     }
 

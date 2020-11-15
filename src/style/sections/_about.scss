@@ -11,8 +11,6 @@
   color: $white-color;
   height: 100%;
   border-top: 0px;
-  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 12rem;
   padding-top: 10rem;
 
@@ -24,7 +22,7 @@
   }
 
   .section-title {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
 
   .about-wrapper {
@@ -33,6 +31,20 @@
     }
 
     &__image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(tab-port) {
+        padding-bottom: 6.4rem;
+      }
+      @include respond(tab-land) {
+        height: 100%;
+      }
+    }
+
+    &__card {
       display: flex;
       height: 100%;
       align-items: center;
@@ -93,10 +105,10 @@
     justify-content: center;
     padding: 5rem 0.2rem;
     width: 100%;
-    padding-top: 9rem;
+    padding-top: 5rem;
 
     @include respond(tab-land) {
-      padding-top: 11rem;
+      padding-top: 4rem;
     }
 
     @include respond(tab-port) {
