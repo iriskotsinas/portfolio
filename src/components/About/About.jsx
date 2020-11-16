@@ -6,7 +6,7 @@ import { mdiChevronDown } from '@mdi/js';
 import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import Image from '../Image/Image';
-import Pdf from '../../files/iris-cv-2020-spotify.pdf';
+import Pdf from '../../files/iris-cv-2020-nov.pdf';
 
 const About = () => {
   const img = 'profile.jpg';
