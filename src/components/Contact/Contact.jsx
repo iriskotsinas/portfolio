@@ -23,6 +23,9 @@ const Contact = () => {
         </div>
         {/* </Fade> */}
       </Container>
+      <Container className="copy">
+        <p>Iris Kotsinas © {new Date().getFullYear()}</p>
+      </Container>
     </section>
   );
 };
