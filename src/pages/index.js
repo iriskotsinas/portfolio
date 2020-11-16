@@ -10,9 +10,9 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Iris Website</title>
+        <title>Iris Portfolio</title>
         <html lang="en" />
-        <meta name="description" content="Iris Website" />
+        <meta name="description" content="Iris Portfolio" />
       </Helmet>
       <App />
       <SideBarButton showBelow={70} />
