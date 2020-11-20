@@ -43,7 +43,7 @@ const About = () => {
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                 <div className="about-wrapper__info">
                   <p className="about-wrapper__info-text">
-                    My name is Iris Kotsinas and I am a 22-year old Master of Science student in
+                    My name is Iris Kotsinas and I am a 23-year old Master of Science student in
                     Media Technology and Engineering, graduating in June 2022 from Linköping
                     University.
                   </p>

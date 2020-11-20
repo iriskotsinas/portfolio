@@ -14,6 +14,7 @@ const Projects = () => {
   const repoDiatot = 'https://github.com/iriskotsinas/TNM040-diatot';
   const repoBoids = 'https://github.com/iriskotsinas/TNM085-Boids-simulation';
   const websiteBoids = 'http://www.student.itn.liu.se/~jacmo699/MT3/tnm085/boids/';
+  const repoCreditCard = 'https://github.com/iriskotsinas/TDDC73-Interaction-Programming';
   const video3D =
     'https://www.dropbox.com/sh/6gfwx74o3qprbly/AAB5QoLdePnxe37lyDXvcsjra?dl=0&fbclid=IwAR16YNJxDxQcFDKD1AszTn2uh7Kcp6phYfkDirQQ-6hJhkjsgshfND2Dzko&preview=Game_of_Kaken_FINAL_2.0_30.5.2019+copy.mp4';
 
@@ -40,6 +41,72 @@ const Projects = () => {
           {/* <p className="project-wrapper__info-text">
           </p> */}
           <Row className="project-row">
+            <Container className="project-total">
+              <Col className="column-project" lg={7} sm={12}>
+                <Fade
+                  left={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={500}
+                  distance="30px"
+                >
+                  <div className="project-wrapper__text">
+                    <h3 className="project-wrapper__text-title">
+                      Credit Card - Interaction Programming
+                    </h3>
+                    <div>
+                      <p>
+                        A simple credit card component was implemented for a lab in the course
+                        TDDC73 Interaction Programming. The user can type their credit card
+                        credentials and it will appear on the image of the credit card. When the
+                        CVV-field is pressed, the card will flip and display the back. Depending on
+                        which number the card number starts with, the logo will change to the
+                        accurate credit card network.
+                      </p>
+                      <p className="mb-4">
+                        I used React Native as framework and implemented the code in TypeScript. The
+                        application was created for Android.
+                      </p>
+                    </div>
+                    {/* <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn text-color-main"
+                      href={Pdf2}
+                    >
+                      Report
+                    </a> */}
+
+                    {repoCreditCard && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn text-color-main"
+                        href={repoCreditCard}
+                      >
+                        Source Code
+                      </a>
+                    )}
+                  </div>
+                </Fade>
+              </Col>
+              <Col className="column-project" lg={5} sm={12}>
+                {' '}
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
+                >
+                  <div className="project-wrapper__image">
+                    <div data-tilt className="thumbnail rounded">
+                      <Image alt="project" filename="creditcard.png" />
+                    </div>
+                  </div>
+                </Fade>
+              </Col>
+            </Container>
             <Container className="project-total">
               <Col className="column-project" lg={7} sm={12}>
                 <Fade
