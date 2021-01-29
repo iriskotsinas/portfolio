@@ -6,7 +6,7 @@ import { mdiChevronDown } from '@mdi/js';
 import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import Image from '../Image/Image';
-import Pdf from '../../files/iris-kotsinas-cv-2020.pdf';
+import Pdf from '../../files/iris2-cv-2021-jan.pdf';
 
 const About = () => {
   const img = 'profile.jpg';
@@ -48,12 +48,13 @@ const About = () => {
                     University.
                   </p>
                   <p className="about-wrapper__info-text">
-                    I am an ambitious student who likes to stay busy. I am as of this year Student
-                    Brand Manager for Netlight Consulting and a part of the programming mentorship
-                    LiTHehack. I have previously been active in several extracurricular activities
-                    and I also enjoy working as a laboratory assistant in various courses. I love
-                    sports, especially lacrosse, and I played in the Swedish women’s national
-                    lacrosse team at the European Championship 2019 in Netanya, Israel.
+                    I am an ambitious student who likes to stay busy. I am as of this year a
+                    Software Developer at We Know IT and a Student Brand Manager for Netlight
+                    Consulting, as well as a part of the programming mentorship LiTHehack. I have
+                    previously been active in several extracurricular activities and I also enjoy
+                    working as a laboratory assistant in various courses. I love sports, especially
+                    lacrosse, and I played in the Swedish women’s national lacrosse team at the
+                    European Championship 2019 in Netanya, Israel.
                   </p>
                   <p className="about-wrapper__info-text">
                     Last summer, I worked as a software engineer intern at Axis Communications and
