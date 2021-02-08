@@ -6,10 +6,10 @@ import { mdiChevronDown } from '@mdi/js';
 import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import Image from '../Image/Image';
-import Pdf from '../../files/iris2-cv-2021-jan.pdf';
+import Pdf from '../../files/iris-kotsinas-cv-2021-feb.pdf';
 
 const About = () => {
-  const img = 'profile.jpg';
+  const img = 'iris-profile.jpg';
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
